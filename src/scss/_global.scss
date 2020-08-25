@@ -1,0 +1,117 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+}
+
+.header__slider {
+    &-item {
+        height: 100vh;
+        background-image: url("../images/header-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+}
+
+.slider-item__info {
+    position: absolute;
+    right: 80px;
+    bottom: 116px;
+    text-align: right;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider-item__info-suptitle {
+    margin-bottom: 5px;
+
+}
+
+.slider-item__info-suptext {
+    margin-bottom: 8px;
+}
+
+.slider-item__info-title {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 86px;
+    margin-bottom: 48px;
+}
+
+.slider-item__info-text {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 20px;
+}
+
+.slider-arrows {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    cursor: pointer;
+    z-index: 4;
+
+    &__left {
+        right: 125px;
+    }
+}
+
+.slider__dots {
+    position: absolute;
+    right: 50px;
+    bottom: 36px;
+    max-width: 920px;
+    width: 100%;
+    color: #fff;
+
+    .slick-current {
+        .dots-box {
+            border-top: 4px solid #4AF6CD;
+
+        }
+    }
+}
+
+.dots-box {
+    width: 200px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid #fff;
+    padding-top: 5px;
+
+    &__number {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    &__name {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+.slick-track{
+
+    transform:none ;
+}
+
+// .slider-item__info {
+//     height: 100vh;
+//     background-image: url("../images/743-536x354.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     z-index: 1000;
+// }
