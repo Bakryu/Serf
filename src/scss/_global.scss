@@ -1,4 +1,7 @@
 body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -79,6 +82,11 @@ body {
 
         }
     }
+
+    .slick-track {
+
+        transform: unset !important;
+    }
 }
 
 .dots-box {
@@ -102,16 +110,106 @@ body {
         line-height: 19px;
     }
 }
-.slick-track{
 
-    transform:none ;
+.header__aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-right: 1px solid rgba(#fff, 0.25);
+    height: 100vh;
+    text-align: center;
+    color: #fff;
 }
 
-// .slider-item__info {
-//     height: 100vh;
-//     background-image: url("../images/743-536x354.jpg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     z-index: 1000;
-// }
+.header__aside-title {
+    font-weight: 800;
+    font-size: 200px;
+    line-height: 156px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.07;
+    max-width: 467px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.menu {
+    padding-top: 40px;
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        a {
+            color: #fff;
+
+            span {
+                display: block;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 3px;
+                padding-top: 6px;
+                margin-bottom: 20px;
+
+            }
+        }
+    }
+}
+
+.header__date {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 64px;
+
+    span {
+        padding-top: 15px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1.4px;
+        display: block;
+    }
+}
+
+.header__search {
+    padding-top: 15;
+    padding-bottom: 35px;
+}
+
+.header__location {
+    margin-top: 30px;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px;
+    position: relative;
+    padding-left: 19px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/mark.svg);
+        width: 11px;
+        height: 13px;
+        top: 0;
+        left: 0;
+    }
+}
+.header__map{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+.header__arrows{
+    position: absolute;
+    left: 210px;
+    bottom: 40px;
+    z-index: 3;
+}

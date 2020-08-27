@@ -7,10 +7,9 @@ $(function () {
     asNavFor: '.slider__dots'
   });
   $('.slider__dots').slick({
-    infinite: true,
     slidesToShow: 4,
-    
+    slidesToScroll: 1,
     asNavFor: '.header__slider',
-    fade: true,
+
   });
 });
